@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Hover Effects on Mousemove</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Men</a><img class="images" src="men.jpg" /></li>
+      <li><a href="#">Women</a><img class="images" src="women.jpg" /></li>
+      <li><a href="#">Kids</a><img class="images" src="kids.jpg" /></li>
+      <li><a href="#">Mobile</a><img class="images" src="mobile.jpg" /></li>
+      <li><a href="#">Watch</a><img class="images" src="watch.jpg" /></li>
+    </ul>
+    <script>
+      let images = document.querySelectorAll('.images');
+
+      function showImage(e) {
+        for (var i = 0; i < images.length; i++) {
+           x = e.pageX;
+           y = e.pageY;
+          images[i].style.transform = `translate(${x}px, ${y}px)`;
+        }
+      }
+
+      document.addEventListener('mousemove', showImage);
+    </script>
+  </body>
+</html>
+

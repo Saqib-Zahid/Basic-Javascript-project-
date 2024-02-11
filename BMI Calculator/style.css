@@ -1,0 +1,82 @@
+/* Corrected CSS for form styling */
+
+body {
+    background-color: #3498db;
+}
+
+.container {
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 2px solid #1e5f8a;
+    border-radius: 5px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-top: 0;
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 5px;
+    /* Color should be specified in hexadecimal or RGB format */
+    color: #000;
+}
+
+/* Remove the space between 'input' and '[type="number"]' */
+input[type="number"],
+select {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Remove the space between 'input' and '[type="number"]:focus' */
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #3498db;
+}
+
+/* Specify 'select' directly without space */
+select {
+    width: 100%;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Correct the typo 'backgroun-color' to 'background-color' */
+input[type="submit"]:hover {
+    background-color: #2187b5;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #3498db;
+}
